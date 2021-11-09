@@ -22,7 +22,7 @@ const getFeatures = () => {
 const loadModel = async () => {
   model = undefined;
   model = await tf.loadLayersModel(
-    "https://raw.githubusercontent.com/mostafa-gouda/crop-model/main/model.json"
+    "https://raw.githubusercontent.com/mostafa-gouda/crop-model/master/model/model.json"
   );
   return model;
 };
