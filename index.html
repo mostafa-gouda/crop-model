@@ -12,19 +12,19 @@
     <section>
       <form action="" class="features-form">
         <h1>Crop Recommendation</h1>
-        <label for="feature1">Ratio of Nitrogen content in soil:</label>
+        <label for="feature1">Ratio of Nitrogen content in soil :</label>
         <input type="number" name="feature1" id="" step="any" required />
-        <label for="feature2">Ratio of Phosphorous content in soil:</label>
+        <label for="feature2">Ratio of Phosphorous content in soil :</label>
         <input type="number" name="feature2" id="" step="any" required />
-        <label for="feature3">Ratio of Potassium content in soil:</label>
+        <label for="feature3">Ratio of Potassium content in soil :</label>
         <input type="number" name="feature3" id="" step="any" required />
-        <label for="feature4">Temperature in degree Celsius:</label>
+        <label for="feature4">Temperature in degree Celsius :</label>
         <input type="number" name="feature4" id="" step="any" required />
-        <label for="feature5">Relative humidity in %:</label>
-        <input type="number" name="feature5" id="" step="any" required />
-        <label for="feature6">ph value of the soil:</label>
-        <input type="number" name="feature6" id="" step="any" required />
-        <label for="feature7">Rainfall in mm:</label>
+        <label for="feature5">Relative humidity in % :</label>
+        <input type="number" name="feature5" id="" step="any" min="0" max="100" required />
+        <label for="feature6">ph value of the soil (0-14) :</label>
+        <input type="number" name="feature6" id="" step="any" min="0" max="14" required />
+        <label for="feature7">Rainfall in mm :</label>
         <input type="number" name="feature7" id="" step="any" required />
         <input type="submit" value="Submit" />
         <h1 class="prediction mobile-prediction">You should plant : <span class="crop-name"></span></h1>
