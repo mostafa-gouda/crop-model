@@ -63,6 +63,9 @@ const makePrediction = async (features) => {
 document.querySelector(".features-form").onsubmit = async (e) => {
   e.preventDefault();
   let features = getFeatures();
+  document.querySelectorAll(".crop-name").forEach((element) => {
+    element.innerHTML = "Calculating...";
+  });
   let cropName = await makePrediction(features);
   document.querySelectorAll(".crop-name").forEach((element) => {
     element.innerHTML = cropName;
