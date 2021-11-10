@@ -17,11 +17,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(34, 65, 34);
-  background-position: center;
+  /* background-color: #1e851e; */
+  background-image: url(bg.svg);
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(10px);
+  background-size: 110%;
   gap: 3rem;
 }
 section {
@@ -32,7 +32,7 @@ section {
 }
 
 .side-text {
-  background-color: rgb(55, 99, 55);
+  background-color: rgb(41, 100, 41);
   border-radius: 2rem;
   padding: 1.2rem 2.5rem;
   width: 450px;
@@ -65,7 +65,7 @@ section {
   display: flex;
   flex-direction: column;
   width: 420px;
-  background-color: rgb(55, 99, 55);
+  background-color: rgb(41, 100, 41);
   padding: 1.2rem 2.5rem;
   border-radius: 2rem;
 }
@@ -114,6 +114,7 @@ section {
 @media screen and (max-width: 1100px) {
   body {
     padding: 1rem 0;
+    background-size: 700%;
   }
   .mobile-prediction {
     display: block;
@@ -133,6 +134,9 @@ section {
   .side-text {
     padding-top: 2rem;
     width: 60%;
+    background-color: rgba(41, 100, 41, 0.596);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
   }
 }
 
